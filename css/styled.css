@@ -1,11 +1,18 @@
 /* ##### 01 TYPOGRAPHY SYSTEM ##### */
 
 :root {
+  /* ### FONTS ### */
   font-size: 62.5%;
+
+  /* ### COLORS ### */
   --primary-color: #e67e22;
   --light-primary-color: #fdf2e9;
+  --darker-primary: #cf711f;
+
+  /* ### TEXT ### */
+  --text-gray-light: #555;
   --text-gray: #333;
-  --darker-btn: #cf711f;
+  --text-gray-bold: #343a40;
 }
 
 * {
@@ -15,22 +22,63 @@
 }
 
 body {
-  font-family: 'rubik', sans-serif /*'inter'*/;
+  font-family: 'rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: var(--text-gray);
   font-size: 1rem;
 }
 
 /* ### GENERAL REUSABLE COMPONENTS ### */
 
-.heading-primary {
-  font-size: 5.2rem;
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary,
+.heading-secondary {
   font-weight: 700;
-  line-height: 1.05;
   color: var(--text-gray);
   letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  /* color: var(--text-gray); */
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--darker-primary);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 .btn:link,
@@ -54,7 +102,7 @@ body {
 }
 .btn--full:hover,
 .btn--full:active {
-  background-color: var(--darker-btn);
+  background-color: var(--darker-primary);
   color: #fff;
 
   /* Trick to add border inside */
@@ -109,7 +157,7 @@ body {
   /* font-family: 'rubik', sans-serif */
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: var(--text-gray);
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.5s;
@@ -117,7 +165,7 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: var(--darker-btn);
+  color: var(--darker-primary);
 }
 
 /* Dessa forma terá mais prioridade perante o main-nav-link:link e :visited */
@@ -131,7 +179,7 @@ body {
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: var(--darker-btn);
+  background-color: var(--darker-primary);
   box-shadow: inset 0 0 0 2px #733f11;
 }
 
@@ -193,6 +241,17 @@ body {
 }
 
 .delivered-text span {
-  color: var(--darker-btn);
+  color: var(--darker-primary);
   font-weight: 600;
+}
+
+/* ### HOW IT WORKS SECTION ### */
+
+.section-how {
+  padding: 9.6px 0;
+  /* background-color: orangered; */
+}
+
+.step-img {
+  width: 50%;
 }
