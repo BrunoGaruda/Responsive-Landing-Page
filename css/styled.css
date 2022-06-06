@@ -120,9 +120,35 @@
 }
 
 .step-img-box {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* pseudo-class precisa de um "content" pelo menos vazio */
+/* criação de um circulo */
+.step-img-box::before,
+.step-img-box::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: var(--light-primary-color);
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .step-img {
