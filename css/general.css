@@ -52,9 +52,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid--4-cols {
+/* .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
-}
+} */
 
 .grid--center-v {
   align-items: center;
