@@ -6,6 +6,9 @@
   --primary-color: #e67e22;
   --light-primary-color: #fdf2e9;
   --darker-primary: #cf711f;
+  --meal-vegetarian-color: #51cf66;
+  --meal-vegan-color: #94d82d;
+  --meal-paleo-color: #ffd43d;
 
   /* ### TEXT ### */
   --text-gray-light: #eee;
@@ -157,4 +160,8 @@ body {
 
 .logo {
   height: 2.2rem;
+}
+
+strong {
+  font-weight: 500;
 }
