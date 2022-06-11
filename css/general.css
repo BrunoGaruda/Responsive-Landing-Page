@@ -128,6 +128,23 @@ body {
   box-shadow: inset 0 0 0 2px #733f11;
 }
 
+.link:link,
+.link:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 0.1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--darker-primary);
+  text-decoration: none;
+  border-bottom: 0.1px solid transparent;
+  padding-bottom: 0.2rem;
+}
+
 .btn--outline:link,
 .btn--outline:visited {
   background-color: #fff;
@@ -140,10 +157,6 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 2px var(--primary-color);
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
 }
 
 /* ### HEADER ### */
@@ -160,6 +173,20 @@ body {
 
 .logo {
   height: 2.2rem;
+}
+
+/* ### HELPER/SETTING CLASSES ###*/
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
 
 strong {
