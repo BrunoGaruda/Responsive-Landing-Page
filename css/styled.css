@@ -67,7 +67,7 @@
 
 .delivered-meals {
   display: flex;
-  /* justify-content: space-between; */
+  align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
 }
@@ -97,7 +97,7 @@
 
 .delivered-text span {
   color: var(--darker-primary);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ### FEATURED SECTION ### */
