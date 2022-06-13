@@ -43,9 +43,14 @@ body {
 .grid {
   display: grid;
 
-  /* revisar depois essas propriedades */
+  /* gap: 9.6rem; */
   column-gap: 9.6rem;
   row-gap: 9.6rem;
+}
+
+/* retira as propriedades herdadas do ultimo filho */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -129,6 +134,20 @@ body {
   box-shadow: inset 0 0 0 2px #733f11;
 }
 
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: var(--light-primary-color);
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
 .link:link,
 .link:visited {
   color: var(--primary-color);
@@ -146,18 +165,24 @@ body {
   padding-bottom: 0.2rem;
 }
 
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: var(--light-primary-color);
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
 
-  /* Trick to add border inside */
-  box-shadow: inset 0 0 0 2px var(--primary-color);
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary-color);
 }
 
 /* ### HEADER ### */
