@@ -7,6 +7,7 @@
   --light-primary-color: #fdf2e9;
   --medium-primary-color: #eb984e;
   --darker-primary: #cf711f;
+  --deep-darker-primary: #45260a;
   --meal-vegetarian-color: #51cf66;
   --meal-vegan-color: #94d82d;
   --meal-paleo-color: #ffd43d;
@@ -107,6 +108,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   background-color: var(--primary-color);
@@ -118,7 +120,10 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 1.5rem;
 
+  border: none;
+  cursor: pointer;
   transition: all 0.5s;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -147,6 +152,19 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
+.btn--form {
+  background-color: var(--deep-darker-primary);
+  color: var(--light-primary-color);
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: var(--light-primary-color);
+  color: var(--text-gray-bold);
+  font-family: inherit;
 }
 
 .link:link,
@@ -184,6 +202,12 @@ body {
   width: 3rem;
   height: 3rem;
   color: var(--primary-color);
+}
+
+*:focus {
+  /* outline: 3px solid var(--deep-darker-primary);
+  outline-offset: 3px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* ### HEADER ### */
