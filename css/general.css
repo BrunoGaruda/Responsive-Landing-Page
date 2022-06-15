@@ -37,6 +37,11 @@ Medium: 11px
 
 :root {
   /* ### FONTS ### */
+
+  /* x = (100% * 10rem) / 16rem
+  x = 1000% / 16
+  x = 62.5% */
+
   font-size: 62.5%;
 
   /* ### COLORS ### */

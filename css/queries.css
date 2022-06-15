@@ -19,3 +19,44 @@
     grid-template-columns: 65fr 35fr;
   }
 }
+
+/* ### BELOW 1200px (Landscape Tables) ### */
+
+/* x = (100% * 9rem) / 16rem
+  x = 900% / 16
+  x = 56.25% */
+
+@media (max-width: calc(1200em / 16)) {
+  :root {
+    font-size: calc(900% / 16);
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .testminonials-container {
+    padding: 9.6rem 4.8rem;
+  }
+}
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
