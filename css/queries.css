@@ -6,15 +6,12 @@
   .hero {
     max-width: 120rem;
   }
-
   .heading-primary {
     font-size: 4.4rem;
   }
-
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .section-testimonials {
     grid-template-columns: 65fr 35fr;
   }
@@ -22,6 +19,7 @@
 
 /* ### BELOW 1200px (Landscape Tables) ### */
 
+/* ### font-size calc ### */
 /* x = (100% * 9rem) / 16rem
   x = 900% / 16
   x = 56.25% */
@@ -30,7 +28,6 @@
   :root {
     font-size: calc(900% / 16);
   }
-
   .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
@@ -52,6 +49,59 @@
   }
   .testminonials-container {
     padding: 9.6rem 4.8rem;
+  }
+}
+
+/* ### BELOW 944px (Tables) ### */
+
+/* ### font-size calc ### */
+/* x = (100% * 8rem) / 16rem
+  x = 800% / 16
+  x = 50% */
+
+@media (max-width: calc(944em / 16)) {
+  :root {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 12rem;
+    gap: 6.4rem;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .cta {
+    grid-template-columns: 3fr, 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1.2rem;
   }
 }
 

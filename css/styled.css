@@ -4,7 +4,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 3.2rem;
 }
 
 .main-nav-link:link,
@@ -234,7 +234,7 @@
   background-color: var(--meal-paleo-color);
 }
 
-.meal-tittle {
+.meal-title {
   font-size: 2.4rem;
   color: var(--text-gray);
   font-weight: 600;
