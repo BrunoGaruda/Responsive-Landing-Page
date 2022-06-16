@@ -244,6 +244,14 @@ body {
   gap: 1.6rem;
 }
 
+/*Foi necessário criar pra diferenciar a lista do @media 704px*/
+.pricing-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 .list-item {
   font-size: 1.8rem;
   display: flex;

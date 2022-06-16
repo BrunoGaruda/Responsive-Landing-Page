@@ -165,6 +165,52 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+/* ### BELOW 704px (Smaller Tables) ### */
+
+@media (max-width: calc(704em / 16)) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    /*Com isso o grid ocupara toda ViewPort*/
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  /*Lista apenas do "meal section", foi criado outro css para a lista "pricing"*/
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
 }
 
 /*- Font sizes (px)
