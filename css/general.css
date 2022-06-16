@@ -60,6 +60,9 @@ Medium: 11px
   --text-gray-mid: #6f6f6f;
   --text-gray: #333;
   --text-gray-bold: #343a40;
+
+  /* ### NAVIGATION OVERFLOW ### */
+  overflow-x: hidden;
 }
 
 * {
@@ -74,6 +77,9 @@ body {
   font-weight: 400;
   color: var(--text-gray);
   font-size: 1rem;
+
+  /* navigation overflow */
+  overflow-x: hidden;
 }
 
 /* ### GENERAL REUSABLE COMPONENTS ### */
@@ -256,22 +262,6 @@ body {
   /* outline: 3px solid var(--deep-darker-primary);
   outline-offset: 3px; */
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
-}
-
-/* ### HEADER ### */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--light-primary-color);
-
-  height: 9.6rem;
-  padding: 0 4.8rem;
-}
-
-.logo {
-  height: 2.2rem;
 }
 
 /* ### HELPER/SETTING CLASSES ###*/
