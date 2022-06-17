@@ -63,6 +63,9 @@ Medium: 11px
 
   /* ### NAVIGATION OVERFLOW ### */
   overflow-x: hidden;
+
+  /* suavidade ao clicar nos botões de navegação */
+  /* scroll-behavior: smooth; */
 }
 
 * {
