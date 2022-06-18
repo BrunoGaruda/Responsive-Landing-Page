@@ -230,6 +230,7 @@ body {
   border-bottom: 0.1px solid currentColor;
   padding-bottom: 0.2rem;
   transition: all 0.4s;
+  font-size: 2.4rem;
 }
 
 .link:hover,
