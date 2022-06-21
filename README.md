@@ -4,11 +4,11 @@
 
 - [Projeto](#projeto)
   - [Desafio](#desafio)
-  - [Fotos e Video](#fotos-e-video)
+  - [Midia](#midia)
   - [Links](#links)
   - [Processo de Criação](#processo-de-criação)
     - [Construído com](#construído-com)
-    - [Definição e Planejamento do projeto](#definição-e-Planejamento-do-projeto)
+    - [Definição e Planejamento do projeto](#definição-e-planejamento-do-projeto)
     - [Esboço e criação das ideias para Layout](#esboço-e-criação-das-ideias-para-layout)
     - [Organização do primeiro design e o desenvolvimento das etapas](#organização-do-primeiro-design-e-o-desenvolvimento-das-etapas)
   - [Aprendizado](#aprendizado)
@@ -27,12 +27,13 @@ O projeto consiste em trabalhar tudo visto no curso de uma forma geral com HTML 
 O maior desafio desse projeto foi personalizar a responsividade do seu jeito e como todas as @medias iriam se comportar de acordo com cada tamanho
 de dispositivo.
 
-### Fotos e Video
+### Midia
 
-<div style="display: inline-block"  align="center"><br>
-   <!-- <img height="150em" src="./src/assets/rosto.png" align="center" alt="Capa do projeto" > <br><br><br> -->
-   <img height="400em" src="./src/assets/lista-de-presença.gif" align="center" alt="desenvolvimento da aplicação" >
-  
+<div style="display: flex"  align="center"><br>
+   <img height="300em" src="/assets/responsive-landing-page-web.gif" align="center" alt="web-lp" > <br><br><br>
+   <img height="300em" src="/assets/form.gif" align="center" alt="form" > <br><br><br>
+   <img height="300em" src="/assets/responsive-landing-page-medias.gif" align="center" alt="medias-lp" > <br><br><br>
+   <img height="300em" src="/assets/lighthouse-test.png" align="center" alt="lighthouse" >
   <br><br>
 </div>
 
@@ -93,18 +94,67 @@ Essa etapa será como será organizado o projeto e quais ferramentas serão util
 
 ### Aprendizado
 
-O projeto consiste em uma aplicação React utilizando o Vite ao invés de por padrão utilizar o "create-react-app".
+O projeto consiste em uma criação de uma Landing Page moderna e com várias funcionalidades que o mercado presente utiliza.
+
+Nesse projeto foi utilizada uma série de truques referentes a css como:
 
 ```
-npm create vite@latest <nome do projeto>
-cd <nome do projeto>
-npm install <criação da pasta node_modules>
-npm run dev
+/* Imagem é elevada para cima ao passar o mouse*/
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.175);
+}
 ```
 
-O aprendizado consiste em desenvolver um projeto react desde a criação ao deploy, utilizando todos estes conteúdos base: propriedades, estado, como desenvolver utilizando componentilização, estilização, hooks (useState, useEffect), imutabilidade, entender o funcionamento e o comportamento de aplicações react.
+```
+/* Imagem é escalonada ao passar o mouse*/
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+```
 
-Outra parte interessante foi a grande vantagem da manipulação do "display: grid" e do "grid-template-columns"
+```
+/* Foi adicionado uma fita de melhor valor*/
+.pricing-plan--complete::after {
+  content: 'Best value';
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-gray);
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+```
+
+```
+/* Foi implementado uma transparencia na imagem*/
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+        rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(/img/eating.jpg);
+
+  background-size: cover;
+  background-position: center;
+}
+```
+
+Poderia falar muito mais truques em que aprendi nesse projeto mas iria ficar muito grande esse readme.
+
+A parte das @medias, foi algo que aprendi totalmente do zero, desde a criação da maior tela que seriam os desktops maiores, ate o mobile com o icone de navegação utilizando JavaScript caso o tamanho da tela seja estreito demais entre os tablents e os celulares. Outra parte interessante foi a grande vantagem do "display: grid" e do "grid-template-columns" para a manipulação da responsividade, tento classes predefinidas no "general.css" foi mais simples organizar os grids.
+
+Foi utilizado o netlify para o deploy juntamente com o formulário, isso foi algo novo e de grande aprendizado utilizar uma ferramenta que hospede o back-end dos formulários.
+
+Foi testado a eficiência do site utilizando a ferramenta do desenvolvedor do google [Lighthouse](https://web.dev/measure/) como você pode ver na sessão - [Fotos e Video](#fotos-e-video) os resultados.
+
+O objetivo dessa landing page e servir de modelo para novos projetos front-end e criação de landing pages semelhantes.
 
 ## Autor
 
