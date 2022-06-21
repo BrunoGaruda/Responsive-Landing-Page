@@ -30,10 +30,10 @@ de dispositivo.
 ### Midia
 
 <div style="display: flex"  align="center"><br>
-   <img height="300em" src="/assets/responsive-landing-page-web.gif" align="center" alt="web-lp" > <br><br><br>
-   <img height="300em" src="/assets/form.gif" align="center" alt="form" > <br><br><br>
-   <img height="300em" src="/assets/responsive-landing-page-medias.gif" align="center" alt="medias-lp" > <br><br><br>
-   <img height="300em" src="/assets/lighthouse-test.png" align="center" alt="lighthouse" >
+   <img height="400em" src="/assets/responsive-landing-page-web.gif" align="center" alt="web-lp" > <br><br><br>
+   <img height="400em" src="/assets/form.gif" align="center" alt="form" > <br><br><br>
+   <img height="400em" src="/assets/responsive-landing-page-medias.gif" align="center" alt="medias-lp" > <br><br><br>
+   <img height="400em" src="/assets/lighthouse-test.png" align="center" alt="lighthouse" >
   <br><br>
 </div>
 
