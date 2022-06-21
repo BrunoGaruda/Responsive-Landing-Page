@@ -152,7 +152,7 @@ A parte das @medias, foi algo que aprendi totalmente do zero, desde a criação 
 
 Foi utilizado o netlify para o deploy juntamente com o formulário, isso foi algo novo e de grande aprendizado utilizar uma ferramenta que hospede o back-end dos formulários.
 
-Foi testado a eficiência do site utilizando a ferramenta do desenvolvedor do google [Lighthouse](https://web.dev/measure/) como você pode ver na sessão - [Fotos e Video](#fotos-e-video) os resultados.
+Foi testado a eficiência do site utilizando a ferramenta do desenvolvedor do google [Lighthouse](https://web.dev/measure/) como você pode ver na sessão [Fotos e Video](#fotos-e-video) os resultados.
 
 O objetivo dessa landing page e servir de modelo para novos projetos front-end e criação de landing pages semelhantes.
 
